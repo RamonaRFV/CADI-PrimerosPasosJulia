@@ -244,6 +244,174 @@ palabra = "Tecnologico"
 # ╔═╡ 3428318e-995f-4e9a-8a8a-ec0d41fe1b0c
 palabra[1]
 
+# ╔═╡ b412ecd5-a2e5-4148-a632-bf71bad5e0bf
+md"""
+## Manejo de arreglos y rangos
+"""
+
+# ╔═╡ f3ba265f-6c29-45d6-a59d-186ebc9364f5
+rangoA = 0:10
+
+# ╔═╡ 74b4c24f-cdb6-4280-bcae-99aa7d47f687
+typeof(rangoA)
+
+# ╔═╡ b50f23b3-fb8e-47b1-a4ef-d57f3ccf0b05
+for ii = 1:5  # ii in 1:5   --> podemos iterar a lo largo de un rango
+	println(ii)
+end
+
+# ╔═╡ a7d5e0b1-ffa5-4090-b8aa-459898601c7c
+crA = collect(rangoA)
+
+# ╔═╡ 7cf056f9-3428-4133-9bd3-bb9e64968592
+typeof(crA)
+
+# ╔═╡ e2286f7d-e4b6-4d60-adb5-38559b3c5362
+md"""
+- En general, el formato de un arreglo es **Array{Tipo, n}**, donde n es el número de dimensiones.
+"""
+
+# ╔═╡ 17d376de-294d-459c-aff0-daa8a3158bba
+arr = [1.2, 2.2, 3.5]
+
+# ╔═╡ 6bd40a93-a32a-462a-a542-5f8b7206f783
+md"""
+## En ocasiones es recomendable inicializar arreglos
+- Tenemos varias opciones
+"""
+
+# ╔═╡ 67321e0b-75a5-447a-aea3-831b017e4db3
+arr1 = zeros(10)
+
+# ╔═╡ e537b633-5af0-4616-96fa-0a4f5ebfca98
+typeof(arr1)
+
+# ╔═╡ b35eb245-4573-4339-b566-38b038210fb4
+arr2 = Array{Float64}(undef, 10)
+
+# ╔═╡ 2e0a0956-6839-4d90-accc-2f1da995c1ad
+typeof(arr2)
+
+# ╔═╡ f47e0ea1-f717-4fd5-9d27-97518df01f94
+arr3 = Float64[]
+
+# ╔═╡ 999b38f8-9153-4cc7-b40f-20da2756e3a8
+typeof(arr3)
+
+# ╔═╡ d9ff6c62-d624-471b-b667-8898fb3b64db
+push!(arr3, 1.0)
+
+# ╔═╡ 4ed1dd68-54dc-4815-95f2-5a02e6b011e6
+arr4 = []
+
+# ╔═╡ 37d0ec28-6ac2-4590-a889-f3e9f0929c52
+typeof(arr4)
+
+# ╔═╡ 668d20e0-b8fa-43fb-a090-4906ffd453cb
+md"""
+## Las principales características de un arreglo son dadas por las siguientes funciones
+- Tipo de los elementos:  **eltype(arr)**
+- Número de elementos:  **length(arr)**
+- Número de dimensiones:  **ndims(arr)**
+- Número de elementos por dimensión:  **size(arr)**
+"""
+
+# ╔═╡ 72015a87-8257-471f-acea-8347db434907
+arr5 = [1  2  3  4; 
+		5  6  7  8;
+		9 10 11 12]
+
+# ╔═╡ 19eab98d-579f-4121-883c-9586fdc55bba
+typeof(arr5)
+
+# ╔═╡ c4670716-cbda-4f62-8315-05c85f13b1b6
+eltype(arr5)
+
+# ╔═╡ 01630722-0e1b-4dcc-bacf-1224256f0884
+length(arr5)
+
+# ╔═╡ 670567f9-47a1-47be-ae05-7ff8fadf6207
+ndims(arr5)
+
+# ╔═╡ cf9cd92e-4ec6-4c3d-a8f8-39a210aafc68
+size(arr5)
+
+# ╔═╡ 73df334a-6c6e-4909-91e3-399adea3ed49
+md"""
+## Indexado de arreglos
+- Usamos **[ ]** para acceder a elementos dentro de un arreglo.
+- El operador **:** nos ayuda a generar rangos, los cuales podemos usar para accesar a un conjunto de elementos en un arreglo.
+"""
+
+# ╔═╡ 1701bd1c-2899-4942-8adb-ac70678f0571
+c1 = rand(10,5) # Esto genera una matriz aleatoria de 10x3 elementos
+
+# ╔═╡ b13b9d1a-8e19-4255-abaf-53f655af4d9e
+c1[4,3] # [renglon, columna]
+
+# ╔═╡ c59bb7c5-9bda-4cbe-bc4b-f3b4ec6703e6
+c1[3,:] # Que tipo de arreglo es?
+
+# ╔═╡ 840b326b-3f73-4f8c-8450-a6478d6a66c1
+c1[:,2] # Que tipo de arreglo es?
+
+# ╔═╡ 8b3df5f3-c89f-4309-b7a4-aa3501cd2f12
+c1[3:6,2:5]
+
+# ╔═╡ 2f8a39f4-29ab-4c86-b5b7-63cad207baf3
+md"""
+## Otras funciones comunes para arreglos
+"""
+
+# ╔═╡ a676e88f-9dad-40a7-8ad8-c75716464acc
+aa = collect(1:7)
+
+# ╔═╡ 5bbdbaef-960e-4cd0-b255-e195cd5b57d7
+bb = [100, 200, 300]
+
+# ╔═╡ 540b8c6a-f753-412b-b898-38699201797e
+aa[:]
+
+# ╔═╡ 92ae0f85-d05f-4e23-b19a-1957710d7034
+bb[:]
+
+# ╔═╡ 734c9f17-cd93-497d-8724-dc9b016f7a99
+[aa; bb]  # Esto concatena ambos vectores
+
+# ╔═╡ 896e0359-2b48-47f8-a12e-c87561c62340
+md"""
+- Existe otra opción usando **append!()**
+"""
+
+# ╔═╡ 34040193-c790-435c-b892-0b1a250317f1
+cc = collect(1:7)
+
+# ╔═╡ ec9795c6-b082-43fe-8819-0a0b6af5ae12
+dd = [100, 200, 300]
+
+# ╔═╡ 916ef73c-d328-40d3-9b78-3b6b8c8f5891
+append!(cc,dd)   # Notemos el uso del símbolo !
+
+# ╔═╡ 2ce02989-7589-4bac-94c9-ca3f6d2493a7
+md"""
+## Operaciones por elemento -- Operador **.** 
+"""
+
+# ╔═╡ eb3adbcd-7306-407a-b214-2cdf0a546d5e
+x1 = collect(0.0:pi/4:2pi)
+
+# ╔═╡ cdc0b410-b695-41ab-8486-4c220650e873
+x1 + 5.0  # Esta operación no está bien definida
+
+# ╔═╡ e0e5a1a8-5377-4ea8-a73d-1efd574bbf81
+x1 .+ 5.0
+
+# ╔═╡ c0053604-3fb0-49e6-9bc3-8d2df8f2a84c
+sin(x1)  # Mismo caso para otra funciones matemáticas (más adelante retomaremos esto...)
+
+# ╔═╡ 94eab866-6b22-435a-bd0b-df8951a13e71
+sin.(x1)
+
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
@@ -555,5 +723,52 @@ version = "17.4.0+0"
 # ╟─fb21f6d1-0ab0-4d39-bc7f-3a7af8303c57
 # ╠═7a8ee7ae-d333-4aca-a286-4d838595b74c
 # ╠═3428318e-995f-4e9a-8a8a-ec0d41fe1b0c
+# ╟─b412ecd5-a2e5-4148-a632-bf71bad5e0bf
+# ╠═f3ba265f-6c29-45d6-a59d-186ebc9364f5
+# ╠═74b4c24f-cdb6-4280-bcae-99aa7d47f687
+# ╠═b50f23b3-fb8e-47b1-a4ef-d57f3ccf0b05
+# ╠═a7d5e0b1-ffa5-4090-b8aa-459898601c7c
+# ╠═7cf056f9-3428-4133-9bd3-bb9e64968592
+# ╟─e2286f7d-e4b6-4d60-adb5-38559b3c5362
+# ╠═17d376de-294d-459c-aff0-daa8a3158bba
+# ╟─6bd40a93-a32a-462a-a542-5f8b7206f783
+# ╠═67321e0b-75a5-447a-aea3-831b017e4db3
+# ╠═e537b633-5af0-4616-96fa-0a4f5ebfca98
+# ╠═b35eb245-4573-4339-b566-38b038210fb4
+# ╠═2e0a0956-6839-4d90-accc-2f1da995c1ad
+# ╠═f47e0ea1-f717-4fd5-9d27-97518df01f94
+# ╠═999b38f8-9153-4cc7-b40f-20da2756e3a8
+# ╠═d9ff6c62-d624-471b-b667-8898fb3b64db
+# ╠═4ed1dd68-54dc-4815-95f2-5a02e6b011e6
+# ╠═37d0ec28-6ac2-4590-a889-f3e9f0929c52
+# ╟─668d20e0-b8fa-43fb-a090-4906ffd453cb
+# ╠═72015a87-8257-471f-acea-8347db434907
+# ╠═19eab98d-579f-4121-883c-9586fdc55bba
+# ╠═c4670716-cbda-4f62-8315-05c85f13b1b6
+# ╠═01630722-0e1b-4dcc-bacf-1224256f0884
+# ╠═670567f9-47a1-47be-ae05-7ff8fadf6207
+# ╠═cf9cd92e-4ec6-4c3d-a8f8-39a210aafc68
+# ╟─73df334a-6c6e-4909-91e3-399adea3ed49
+# ╠═1701bd1c-2899-4942-8adb-ac70678f0571
+# ╠═b13b9d1a-8e19-4255-abaf-53f655af4d9e
+# ╠═c59bb7c5-9bda-4cbe-bc4b-f3b4ec6703e6
+# ╠═840b326b-3f73-4f8c-8450-a6478d6a66c1
+# ╠═8b3df5f3-c89f-4309-b7a4-aa3501cd2f12
+# ╟─2f8a39f4-29ab-4c86-b5b7-63cad207baf3
+# ╠═a676e88f-9dad-40a7-8ad8-c75716464acc
+# ╠═5bbdbaef-960e-4cd0-b255-e195cd5b57d7
+# ╠═540b8c6a-f753-412b-b898-38699201797e
+# ╠═92ae0f85-d05f-4e23-b19a-1957710d7034
+# ╠═734c9f17-cd93-497d-8724-dc9b016f7a99
+# ╟─896e0359-2b48-47f8-a12e-c87561c62340
+# ╠═34040193-c790-435c-b892-0b1a250317f1
+# ╠═ec9795c6-b082-43fe-8819-0a0b6af5ae12
+# ╠═916ef73c-d328-40d3-9b78-3b6b8c8f5891
+# ╟─2ce02989-7589-4bac-94c9-ca3f6d2493a7
+# ╠═eb3adbcd-7306-407a-b214-2cdf0a546d5e
+# ╠═cdc0b410-b695-41ab-8486-4c220650e873
+# ╠═e0e5a1a8-5377-4ea8-a73d-1efd574bbf81
+# ╠═c0053604-3fb0-49e6-9bc3-8d2df8f2a84c
+# ╠═94eab866-6b22-435a-bd0b-df8951a13e71
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
