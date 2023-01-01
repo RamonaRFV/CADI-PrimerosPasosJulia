@@ -24,5 +24,7 @@ El taller se llevará a cabo de manera **virtual** del **9 al 13 de enero de 202
 
 ## Sitios importantes
 https://julialang.org/
+
 https://github.com/fonsp/Pluto.jl
+
 https://www.julia-vscode.org/
