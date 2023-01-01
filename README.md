@@ -10,18 +10,14 @@ este lenguaje de programación y paquetes más útiles.
 ## Temario
 1.  Presentación
 2.  Instalación y editores
-3.  Variables y tipos
-4.  Flujo de control
-5.  Funciones
-6.  Estructuras de datos
-7.  Input/Output
-8.  Gráficas simples
-9.  Paquetes 
+3.  Paquetes
+4.  Variables y tipos 
+5.  Flujo de control
+6.  Funciones
+7.  Estructuras de datos
+8.  Input/Output
+9.  Gráficas simples
 10. Ejemplos de despacho múltiple
 
-Fechas y horarios: Del 9 al 13 de enero de 2023 en horario de 9:00 a
-13:00, 14:00 a 16:00
-
-Modalidad: Virtual
-
-Enero 2023
+## Fechas y horarios
+El taller se llevará a cabo de manera **virtual** del **9 al 13 de enero de 2023** en horario de **9:00 a 13:00 hrs**, y por la tarde de **14:00 a 16:00 hrs**.
