@@ -21,3 +21,8 @@ este lenguaje de programación y paquetes más útiles.
 
 ## Fechas y horarios
 El taller se llevará a cabo de manera **virtual** del **9 al 13 de enero de 2023** en horario de **9:00 a 13:00 hrs**, y por la tarde de **14:00 a 16:00 hrs**.
+
+## Sitios importantes
+https://julialang.org/
+https://github.com/fonsp/Pluto.jl
+https://www.julia-vscode.org/
