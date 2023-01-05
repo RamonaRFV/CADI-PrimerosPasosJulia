@@ -24,8 +24,10 @@ El taller se llevará a cabo de manera **virtual** del **9 al 13 de enero de 202
 
 ## Navegación en el repositorio
 El repositorio está organizado de la siguiente manera:
-**src** -- códigos (.jl) usados en las sesiones.  La versión en pdf de lo visto en las sesiones está en la **raíz** del repositorio.
-**hw** -- tareas del taller.
+
+- **src** -- códigos (.jl) usados en las sesiones.  La versión en pdf de lo visto en las sesiones está en la **raíz** del repositorio.
+
+- **hw** -- tareas del taller.
 
 ## Sitios importantes
 https://julialang.org/
