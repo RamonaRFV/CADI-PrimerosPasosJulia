@@ -35,3 +35,5 @@ https://julialang.org/
 https://github.com/fonsp/Pluto.jl
 
 https://www.julia-vscode.org/
+
+https://docs.juliaplots.org/stable/ 
