@@ -24,6 +24,7 @@ El taller se llevará a cabo de manera **virtual** del **9 al 13 de enero de 202
 
 ## Grabaciones
 Las grabaciones están en el siguiente folder de Google Drive.  Para ingresar será necesario ingresar con su cuenta institucional.
+
 https://drive.google.com/drive/folders/1f1hxKcepFC_Uyl__yeoMpbMjOwMMjYuy?usp=sharing 
 
 ## Navegación en el repositorio
