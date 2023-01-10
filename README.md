@@ -23,7 +23,7 @@ este lenguaje de programación y paquetes más útiles.
 El taller se llevará a cabo de manera **virtual** del **9 al 13 de enero de 2023** en horario de **9:00 a 13:00 hrs**, y por la tarde de **14:00 a 16:00 hrs**.
 
 ## Grabaciones
-Las grabaciones están en el siguiente folder de Google Drive.  Para ingresar será necesario ingresar con su cuenta institucional.
+Las grabaciones están en el siguiente folder de Google Drive.  Para tener acceso será necesario ingresar con su cuenta institucional.
 
 https://drive.google.com/drive/folders/1f1hxKcepFC_Uyl__yeoMpbMjOwMMjYuy?usp=sharing 
 
